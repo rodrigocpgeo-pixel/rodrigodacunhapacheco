@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio REA | Dr. Rodrigo da Cunha Pacheco</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-bg {
+            background: radial-gradient(circle at top right, rgba(30, 41, 59, 0.08), transparent),
+                        radial-gradient(circle at bottom left, rgba(14, 116, 144, 0.05), transparent);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col gradient-bg selection:bg-cyan-500 selection:text-white">
+
+    <!-- Header / Hero Section -->
+    <header class="hero-gradient text-white py-16 px-4 md:px-8 relative overflow-hidden shadow-lg">
+        <!-- Elemento Decorativo Geográfico/Astronômico em SVG -->
+        <div class="absolute -right-16 -top-16 w-96 h-96 opacity-10 pointer-events-none">
+            <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.5" class="w-full h-full text-cyan-400">
+                <circle cx="50" cy="50" r="45" />
+                <circle cx="50" cy="50" r="35" />
+                <circle cx="50" cy="50" r="25" />
+                <line x1="50" y1="5" x2="50" y2="95" />
+                <line x1="5" y1="50" x2="95" y2="50" />
+                <line x1="18.2" y1="18.2" x2="81.8" y2="81.8" />
+                <line x1="18.2" y1="81.8" x2="81.8" y2="18.2" />
+            </svg>
+        </div>
+
+        <div class="max-w-5xl mx-auto relative z-10 flex flex-col md:flex-row items-center gap-8">
+            <!-- Foto de Perfil do Autor (Puxada do perfil do GitHub automaticamente) -->
+            <div class="flex-shrink-0">
+                <img src="https://github.com/rodrigocpgeo-pixel.png" 
+                     alt="Foto de Dr. Rodrigo da Cunha Pacheco" 
+                     onerror="this.onerror=null; this.src='https://placehold.co/150x150/0e7490/ffffff?text=RP';"
+                     class="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover shadow-inner border-4 border-slate-700 select-none bg-slate-800" />
+            </div>
+
+            <!-- Informações do Autor -->
+            <div class="text-center md:text-left flex-grow">
+                <div class="inline-flex items-center gap-1.5 bg-cyan-500/20 text-cyan-300 px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase mb-3 border border-cyan-500/30">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    Recursos Educacionais Abertos (REA)
+                </div>
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold font-heading tracking-tight mb-2">
+                    Rodrigo da Cunha Pacheco
+                </h1>
+                <p class="text-cyan-400 font-semibold text-sm md:text-base mb-4 font-heading">
+                    Doutor em Ciências (Geografia Física) | Professor & Pesquisador no IFSP
+                </p>
+                <p class="text-slate-300 text-sm md:text-base leading-relaxed max-w-3xl">
+                    Entusiasta da pesquisa no uso da Inteligência Artificial aplicada na produção de recursos educacionais digitais interativos e na potencialização do processo de ensino-aprendizagem das geociências e ciências correlatas.
+                </p>
+                
+                <div class="mt-5 flex flex-wrap justify-center md:justify-start gap-3">
+                    <a href="mailto:rodrigo.pacheco@ifsp.edu.br" class="inline-flex items-center gap-2 bg-slate-800/80 hover:bg-slate-800 text-cyan-300 hover:text-cyan-200 font-medium py-2 px-4 rounded-xl text-xs md:text-sm transition-all duration-200 border border-slate-700/50 shadow-sm">
+                        <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        rodrigo.pacheco@ifsp.edu.br
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-4 py-12 md:py-16 flex-grow w-full">
+        <!-- Seção Introdutória -->
+        <div class="text-center mb-12">
+            <h2 class="text-2xl md:text-3xl font-bold font-heading text-slate-900 mb-3">
+                Exploradores & Ferramentas Educacionais
+            </h2>
+            <p class="text-slate-600 max-w-2xl mx-auto text-sm md:text-base">
+                Simuladores e jogos projetados de forma aberta para facilitar a compreensão de conceitos espaciais, geográficos e astronômicos essenciais.
+            </p>
+            <div class="w-16 h-1 bg-cyan-600 mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <!-- Grid de Cards de Recursos -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Recurso 1: Jogo das Direções Cardeais -->
+            <div class="bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col group overflow-hidden">
+                <div class="p-6 flex-grow">
+                    <!-- Ícone Temático (Bússola / Rosa dos Ventos) -->
+                    <div class="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10" stroke-width="2"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.24 7.76l-2.12 6.36-6.36 2.12 2.12-6.36 6.36-2.12z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold font-heading text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors">
+                        Jogo das Direções Cardeais
+                    </h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Um jogo interativo e lúdico projetado para auxiliar os estudantes no desenvolvimento de habilidades de orientação espacial e identificação das direções cardeais.
+                    </p>
+                </div>
+                <div class="px-6 pb-6 pt-2">
+                    <a href="https://rodrigocpgeo-pixel.github.io/jogo-das-direcoes-cardeais/" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2.5 px-4 rounded-xl text-sm transition-colors duration-200">
+                        Acessar Recurso
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Recurso 2: Criador de Mapa Mental -->
+            <div class="bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col group overflow-hidden">
+                <div class="p-6 flex-grow">
+                    <!-- Ícone Temático (Mapa Mental) -->
+                    <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="3" stroke-width="2"/>
+                            <circle cx="5" cy="5" r="2" stroke-width="2"/>
+                            <circle cx="19" cy="5" r="2" stroke-width="2"/>
+                            <circle cx="5" cy="19" r="2" stroke-width="2"/>
+                            <circle cx="19" cy="19" r="2" stroke-width="2"/>
+                            <line x1="7" y1="7" x2="10" y2="10" stroke-width="2"/>
+                            <line x1="17" y1="7" x2="14" y2="10" stroke-width="2"/>
+                            <line x1="7" y1="17" x2="10" y2="14" stroke-width="2"/>
+                            <line x1="17" y1="17" x2="14" y2="14" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold font-heading text-slate-900 mb-2 group-hover:text-purple-600 transition-colors">
+                        Criador de Mapa Mental
+                    </h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Ferramenta interativa de mapeamento cognitivo que permite a síntese visual de conceitos complexos, ideal para fixação de conteúdos de forma dinâmica.
+                    </p>
+                </div>
+                <div class="px-6 pb-6 pt-2">
+                    <a href="https://rodrigocpgeo-pixel.github.io/criador-de-mapa-mental/" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2.5 px-4 rounded-xl text-sm transition-colors duration-200">
+                        Acessar Recurso
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Recurso 3: Explorador Estações do Ano -->
+            <div class="bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col group overflow-hidden">
+                <div class="p-6 flex-grow">
+                    <!-- Ícone Temático (Estações / Clima) -->
+                    <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="5" stroke-width="2"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M5.64 18.36l-1.42 1.42M19.78 4.22l-1.42 1.42"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold font-heading text-slate-900 mb-2 group-hover:text-amber-600 transition-colors">
+                        Explorador de Estações do Ano
+                    </h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Um simulador focado na representação dos ciclos das estações climáticas, explorando o plano de translação terrestre e a insolação solar diferenciada.
+                    </p>
+                </div>
+                <div class="px-6 pb-6 pt-2">
+                    <a href="https://rodrigocpgeo-pixel.github.io/Explorador-estacoes-do-ano" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-amber-600 hover:bg-amber-700 text-white font-semibold py-2.5 px-4 rounded-xl text-sm transition-colors duration-200">
+                        Acessar Recurso
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Recurso 4: Sun-Earth-Moon System -->
+            <div class="bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col group overflow-hidden">
+                <div class="p-6 flex-grow">
+                    <!-- Ícone Temático (Órbitas Sol-Terra-Lua) -->
+                    <div class="w-12 h-12 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <ellipse cx="12" cy="12" rx="9" ry="5" stroke-width="2"/>
+                            <ellipse cx="12" cy="12" rx="4" ry="2" stroke-width="2"/>
+                            <circle cx="12" cy="12" r="2" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold font-heading text-slate-900 mb-2 group-hover:text-sky-600 transition-colors">
+                        Sistema Sol-Terra-Lua
+                    </h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Representação espacial do arranjo dinâmico entre o Sol, a Terra e a Lua. Excelente para o ensino das fases lunares, marés e mecânica celeste básica.
+                    </p>
+                </div>
+                <div class="px-6 pb-6 pt-2">
+                    <a href="https://rodrigocpgeo-pixel.github.io/Sun-Earth-Moon-System/" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-sky-600 hover:bg-sky-700 text-white font-semibold py-2.5 px-4 rounded-xl text-sm transition-colors duration-200">
+                        Acessar Recurso
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Recurso 5: SolarSystemSimulator -->
+            <div class="bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col group overflow-hidden">
+                <div class="p-6 flex-grow">
+                    <!-- Ícone Temático (Sistema Solar) -->
+                    <div class="w-12 h-12 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="3" fill="currentColor"/>
+                            <circle cx="12" cy="12" r="6" stroke-width="1.5" stroke-dasharray="3,3"/>
+                            <circle cx="12" cy="12" r="10" stroke-width="1.5"/>
+                            <circle cx="18" cy="6" r="1.5" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold font-heading text-slate-900 mb-2 group-hover:text-teal-600 transition-colors">
+                        Simulador do Sistema Solar
+                    </h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Um modelo interativo completo do nosso Sistema Solar, proporcionando a exploração das órbitas planetárias e suas respectivas escalas de movimento.
+                    </p>
+                </div>
+                <div class="px-6 pb-6 pt-2">
+                    <a href="https://rodrigocpgeo-pixel.github.io/SolarSystemSimulator/" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-semibold py-2.5 px-4 rounded-xl text-sm transition-colors duration-200">
+                        Acessar Recurso
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card Especial: Sobre REA -->
+            <div class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl shadow-sm text-white flex flex-col p-6 justify-between border border-slate-700">
+                <div>
+                    <span class="text-xs bg-slate-700 text-slate-300 font-semibold px-2.5 py-1 rounded-md uppercase tracking-wider">Compromisso</span>
+                    <h3 class="text-lg font-bold font-heading mt-3 mb-2 text-cyan-400">
+                        Licenciamento Aberto
+                    </h3>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                        Estes recursos são licenciados de forma livre, permitindo que professores de todo o mundo os utilizem, adaptem e redistribuam gratuitamente em suas práticas docentes cotidianas.
+                    </p>
+                    <!-- Alerta de aprimoramento constante -->
+                    <div class="bg-slate-800/60 rounded-xl p-3 border border-slate-700/50 flex items-start gap-2.5">
+                        <svg class="w-4 h-4 text-cyan-400 mt-0.5 flex-shrink-0 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 1121.21 8H18"></path>
+                        </svg>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            <strong class="text-white block mb-0.5">Evolução Contínua:</strong>
+                            Os recursos estão em constante processo de aprimoramento técnico e pedagógico.
+                        </p>
+                    </div>
+                </div>
+                <div class="mt-6 flex items-center gap-3 text-xs text-slate-400">
+                    <svg class="w-8 h-8 text-slate-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    <span>Fomento à inovação acadêmica e ao livre acesso científico.</span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8 px-4 border-t border-slate-800 text-center text-sm">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <div>
+                <p class="font-semibold text-slate-300">&copy; 2026 Dr. Rodrigo da Cunha Pacheco</p>
+                <p class="text-xs text-slate-500 mt-1">Geografia Física & Recursos Educacionais Digitais</p>
+            </div>
+            <div class="flex flex-col items-center md:items-end gap-2 text-xs text-slate-500">
+                <a href="mailto:rodrigo.pacheco@ifsp.edu.br" class="text-slate-400 hover:text-cyan-400 flex items-center gap-1.5 transition-colors font-medium">
+                    <svg class="w-4 h-4 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                    rodrigo.pacheco@ifsp.edu.br
+                </a>
+                <div class="flex items-center gap-2">
+                    <span>Criado de forma aberta com fins pedagógicos</span>
+                    <span>•</span>
+                    <a href="https://github.com/rodrigocpgeo-pixel" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400 transition-colors">GitHub Perfil</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
